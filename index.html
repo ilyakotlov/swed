@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Swedbank UI</title>
+	<link rel="stylesheet" href="styles/fonts.css">
+	<link rel="stylesheet" href="styles/header.css">
+	<link rel="stylesheet" href="styles/footer.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+	<script src="scripts.js" type="text/javascript" defer></script>
+	<script type="module" src="components/sb-router/sb-router.js"></script>
+	<script type="module" src="components/sb-home/sb-home.js"></script>
+	<script type="module" src="components/sb-everyday-banking/sb-everyday-banking.js"></script>
+	<script type="module" src="components/sb-welcome/sb-welcome.js"></script>
+	<script type="module" src="components/sb-payment-form/sb-payment-form.js"></script>
+	<script type="module" src="components/sb-calculator/sb-calculator.js"></script>
+	<script type="module" src="components/ui-footer-link/ui-footer-link.js"></script>
+	<script type="module" src="components/ui-button/ui-button.js"></script>
+	<script type="module" src="components/ui-tabs/ui-tabs.js"></script>
+	<script type="module" src="components/ui-form-input/ui-form-input.js"></script>
+	<script type="module" src="components/ui-range-slider/ui-range-slider.js"></script>
+</head>
+<body>
+	<div class="main-container">
+		<div class="header">
+			<div class="header-top-line"></div>
+			<div class="logo">
+				<a route="/">
+					<img src="assets/swedbank_logo.png" />
+				</a>
+			</div>
+			<div class="nav">
+				<a route="/" class="nav-link">
+					<svg width="20" height="20">
+						<path xmlns="http://www.w3.org/2000/svg"
+							d="M10,4.737 L17.368,12.106 L17.368,17.895 L12.105,17.895 L12.105,11.58 L7.895,11.58 L7.895,17.895 L2.632,17.895 L2.632,12.106 L10,4.737 L10,4.737 Z M16.315,6.316 L16.315,2.106 L14.211,2.106 L14.211,4.21 L10,0 L0,10.001 L1.579,11.58 L10,3.159 L18.421,11.58 L20,10.001 L16.315,6.316 L16.315,6.316 Z" />
+					</svg>
+					<span>Home</span>
+				</a>
+				<a route="/everyday-banking" class="nav-link">
+					<svg width="20" height="20">
+						<path xmlns="http://www.w3.org/2000/svg"
+							d="M15,16 L20,16 C20,17.654 18.655,19 17,19 L7.5,19 C6.672,19 6,18.328 6,17.5 L6,8.5 C6,7.672 6.672,7 7.5,7 L17,7 C18.655,7 20,8.346 20,10 L15,10 C13.346,10 12,11.346 12,13 C12,14.654 13.346,16 15,16 L15,16 Z M15,11 L20,11 L20,15 L15,15 C13.896,15 13,14.104 13,13 C13,11.895 13.896,11 15,11 L15,11 Z M15,13 C15,13.553 15.448,14 16,14 C16.552,14 17,13.553 17,13 C17,12.447 16.552,12 16,12 C15.448,12 15,12.447 15,13 L15,13 Z M2,10 L5,10 L5,12 L2,12 C0.896,12 0,11.104 0,10 L0,2 C0,0.896 0.896,0 2,0 L14,0 C15.105,0 16,0.896 16,2 L16,6 L2,6 L2,10 L2,10 Z M2,3 L14,3 L14,2 L2,2 L2,3 Z" />
+					</svg>
+					<span>Everyday banking</span>
+				</a>
+			</div>
+		</div>
+		<div class="content-wrapper">
+			<div class="content">
+				<sb-router>
+					<sb-route 
+						path="/" 
+						title="Home" 
+						component="sb-home">
+					</sb-route>
+
+					<sb-route 
+						path="/everyday-banking" 
+						title="Everyday banking" 
+						component="sb-everyday-banking">
+					</sb-route>
+
+					<sb-outlet></sb-outlet>
+				</sb-router>
+			</div>
+		</div>
+		<div class="footer-wrapper">
+			<div class="footer-top-line"></div>
+			<div class="footer">
+				<div class="footer-cols">
+					<div class="footer-col footer-col-contacts">
+						<div class="footer-col-title">Contact</div>
+						<div class="footer-contact-headline">6 310 310</div>
+
+						<a href="mailto:info@swedbank.ee">info@swedbank.ee</a>
+
+						<p>
+							SWEDBANK AS<br/>
+							Liivalaia 8, 15040 Tallinn<br/>
+							SWIFT kood/BIC: HABAEE2X<br/>
+							Reg. number: 10060701
+						</p>
+
+						<ul class="footer-social-networks">
+							<li>
+								<img src="assets/social/facebook.svg" />
+							</li>
+							<li>
+								<img src="assets/social/instagram.svg" />
+							</li>
+							<li>
+								<img src="assets/social/youtube.svg" />
+							</li>
+							<li>
+								<img src="assets/social/twitter.svg" />
+							</li>
+							<li>
+								<img src="assets/social/skype.svg" />
+							</li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<div class="footer-col-title">Quicklinks</div>
+
+						<ul class="footer-col-links">
+							<ui-footer-link title="Calculators"></ui-footer-link>
+							<ui-footer-link title="Prices"></ui-footer-link>
+							<ui-footer-link title="Terms of service"></ui-footer-link>
+							<ui-footer-link title="Privacy and security"></ui-footer-link>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<div class="footer-col-title">Join Swedbank</div>
+
+						<ul class="footer-col-links">
+							<ui-footer-link title="Client programs"></ui-footer-link>
+							<ui-footer-link title="Business customers"></ui-footer-link>
+							<ui-footer-link title="Jobs"></ui-footer-link>
+							<ui-footer-link title="Internships"></ui-footer-link>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<div class="footer-col-title">Tooted</div>
+
+						<ul class="footer-col-links">
+							<ui-footer-link title="Everyday banking"></ui-footer-link>
+							<ui-footer-link title="Loans"></ui-footer-link>
+							<ui-footer-link title="Insurance"></ui-footer-link>
+							<ui-footer-link title="Cards"></ui-footer-link>
+							<ui-footer-link title="Stocks"></ui-footer-link>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-disclaimer">
+				<p>
+					Olete finantsteenuseid pakkuvate ettevõtete (Swedbank AS, Swedbank Liising AS, Swedbank P&C Insurance AS, Swedbank
+					Life
+					Insurance SE ja Swedbank Investeerimisfondid AS) kodulehel. Enne mis tahes lepingu sõlmimist tutvuge vastava teenuse
+					tingimustega ning vajaduse korral konsulteerige asjatundjaga. Swedbank AS ei osuta krediidinõustamisteenust
+					krediidiandjate- ja vahendajate seaduse mõistes. Laenu võtmise otsuse langetab laenusaaja, kes hindab panga poolt
+					esitatud teabe ja hoiatuste põhjal pakutava laenutoote ja lepingutingimuste sobivust oma isikliku laenuhuvi,
+					-vajaduse
+					ja finantsolukorraga ja ta vastutab lepingu sõlmimisega kaasnevate tagajärgede eest.
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

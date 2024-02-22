@@ -1,0 +1,65 @@
+.payment-form-wrapper form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  flex-direction: column;
+}
+
+.payment-form .row {
+  display: flex;
+  justify-content: right;
+  min-height: 32px;
+  margin-bottom: 10px;
+}
+
+.payment-form .row label {
+  line-height: 32px;  
+  color: #896F6F;
+  font-size: 12px;
+}
+
+.payment-form .row > *:last-child {
+  width: 300px;
+  margin-left: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.payment-form .row > .payment-form-amount-wrapper {
+  display: flex;
+}
+
+.payment-form .row > .payment-form-amount-wrapper > * {
+  flex-grow: 1;
+}
+
+.payment-form .row > .payment-form-amount-wrapper :last-child {
+  flex-basis: 36px;
+  margin-left: 10px;
+}
+
+.payment-form select, .payment-form input {
+  border: 1px solid #BCD8DB;
+  border-radius: 2px;
+  height: 32px;
+  font-size: 12px;
+  color: #512B2B;
+  padding: 0;
+  box-sizing: border-box;
+  padding: 0 5px !important;
+}
+
+.payment-form select {
+  background-color: #EBF8F2;
+}
+
+.payment-form-actions {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+.payment-form-actions ui-button {
+  margin-left: 10px;
+}

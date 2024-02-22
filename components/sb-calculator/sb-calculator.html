@@ -1,0 +1,48 @@
+<div class="calculator-wrapper">
+  <div class="calculator-form-wrapper">
+    <div class="calculator-form">
+      <div class="row">
+        <label>Loan size</label>
+        <ui-range-slider 
+          min="32000" 
+          max="320000" 
+          value="32000"
+          step="500"
+        ></ui-range-slider>
+      </div>
+      <div class="row">
+        <label for="dropdown-period">Period</label>
+        <div>
+          <select class="dropdown-period" id="dropdown-period">
+            <option value="30">30 years</option>
+            <option value="20">20 years</option>
+            <option value="10">10 years</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <label for="dropdown-interest">Interest</label>
+        <div>
+          <select class="dropdown-interest" id="dropdown-interest">
+            <option value="4.5">4.5%</option>
+            <option value="3">3%</option>
+            <option value="1.5">1.5%</option>
+          </select>
+          <input type="hidden" class="slider-loan" value="32000" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="calculator-result">
+    <div class="row">
+      <span class="calculator-result-label">Monthly payment</span>
+      <div class="calculator-result-value-wrapper">
+        <span class="calculator-result-value"></span> EUR
+      </div>
+    </div>
+
+    <div class="calculator-result-actions">
+      <ui-button title="Apply"></ui-button>
+    </div>
+  </div>
+</div>

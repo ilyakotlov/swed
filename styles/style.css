@@ -1,0 +1,50 @@
+html, body {
+	margin: 0;
+	font-family: RobotoRegular;
+}
+
+.main-container {
+	background-color: #FBF2EA;
+}
+
+.content-wrapper {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.content-wrapper::before {
+	display: block;
+	content: "";
+	background-color: transparent;
+	transition: background-color 0.25s ease-out;
+	will-change: background-color;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	z-index: 2;
+}
+
+.content {
+	width: 100%;
+	max-width: 1260px;
+	min-height: 300px;
+	padding: 0 30px 30px;
+}
+
+ .header.nav-hovered + .content-wrapper::before {
+  background-color: rgba(81,43,43,0.6);
+}
+
+h1 {
+	font-family: HeadlineBlack;
+	color: #F35B1C;
+	font-size: 26px;
+	padding-left: 20px;
+	margin: 12px 0;
+}

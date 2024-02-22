@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>fb</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Sprite" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sprite" transform="translate(-1270.000000, -10.000000)" fill="#512B2B">
+            <g id="Icons" transform="translate(9.000000, -22.000000)">
+                <g id="fb" transform="translate(1261.000000, 32.000000)">
+                    <path d="M10,0 C4.478,0 0,4.477 0,10 C0,15.523 4.478,20 10,20 C15.522,20 20,15.523 20,10 C20,4.477 15.522,0 10,0 L10,0 Z M12.585,9.999 L10.946,10 L10.945,16 L8.696,16 L8.696,10 L7.196,10 L7.196,7.933 L8.696,7.931 L8.693,6.714 C8.693,5.026 9.151,4 11.137,4 L12.792,4 L12.792,6.069 L11.757,6.069 C10.984,6.069 10.946,6.357 10.946,6.895 L10.943,7.931 L12.804,7.931 L12.585,9.999 L12.585,9.999 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

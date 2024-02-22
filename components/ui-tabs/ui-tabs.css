@@ -1,0 +1,31 @@
+nav.tabs {
+  display: flex;
+}
+
+nav.tabs > ::slotted([slot="tab"]) {
+  padding: 16px 20px;
+  color: #512B2B;
+  text-align: center;
+  background-color: #F7F5F3;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 1px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  margin: 0;
+}
+
+nav.tabs > ::slotted([slot="tab"][selected]) {
+  background-color: #FFFFFF;
+}
+
+::slotted([slot="panel"]) {
+  display: none;
+  background: #FFFFFF;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+::slotted([slot="panel"][selected]) {
+  display: block;
+}

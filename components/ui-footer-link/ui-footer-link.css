@@ -1,0 +1,27 @@
+.footer-col-links li {
+	margin: 10px 0;
+	padding-left: 10px;
+	position: relative;
+	font-size: 14px;
+}
+
+.footer-col-links li::before {
+	content: "";
+	width: 0; 
+	height: 0; 
+	position: absolute;
+	left: 0;
+  top: 3px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #512B2B;
+}
+
+.footer-col-links li a {
+	text-decoration: none;
+	color: #512B2B;
+}
+
+.footer-col-links li a:hover {
+	text-decoration: underline;
+}

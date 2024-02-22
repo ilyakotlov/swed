@@ -1,0 +1,17 @@
+ui-button button {
+  border-radius: 2px;
+  border: none;
+  background-color: #EE7023;
+  color: #FFFFFF;
+  font-size: 13px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+ui-button button:hover {
+  background-color: #FB4F00;
+}
+
+ui-button button.button-blue {
+  background-color: #31A3AE;
+}

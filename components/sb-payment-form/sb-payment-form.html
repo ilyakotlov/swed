@@ -1,0 +1,52 @@
+<div class="payment-form-wrapper">
+  <form>
+    <div class="payment-form">
+      <div class="row">
+        <label for="dropdown-account-name">Account</label>
+        <select id="dropdown-account-name">
+          <option>Account name 1</option>
+          <option>Account name 2</option>
+          <option>Account name 3</option>
+          <option>Account name 4</option>
+        </select>
+      </div>
+      <div class="row">
+        <label for="dropdown-saved-payment">Saved payments</label>
+        <select id="dropdown-saved-payment">
+          <option>Saved payment 1</option>
+          <option>Saved payment 2</option>
+          <option>Saved payment 3</option>
+          <option>Saved payment 4</option>
+        </select>
+      </div>
+      <div class="row">
+        <label for="text-amount">Amount</label>
+        <div class="payment-form-amount-wrapper">
+          <ui-form-input 
+            id="text-amount" 
+            custom-error-display 
+            type="text" 
+            required
+            pattern="[0-9]+"
+            data-patternMismatch="Amount accepts only numbers"
+            data-valueMissing="Field is required">
+          </ui-form-input>
+          <select>
+            <option>EUR</option>
+            <option>USD</option>
+            <option>GBP</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <label for="text-description">Description</label>
+        <input type="text" id="text-description" />
+      </div>
+    </div>
+    <div class="payment-form-actions">
+      <ui-button title="Save" variant="button-blue"></ui-button>
+      <ui-button title="Pay"></ui-button>
+    </div>
+  </form>
+  
+</div>

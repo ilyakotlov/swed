@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>YT</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Sprite" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sprite" transform="translate(-1300.000000, -10.000000)" fill="#512B2B">
+            <g id="Icons" transform="translate(9.000000, -22.000000)">
+                <g id="YT" transform="translate(1291.000000, 32.000000)">
+                    <path d="M10,0 C4.478,0 0,4.477 0,10 C0,15.523 4.478,20 10,20 C15.522,20 20,15.523 20,10 C20,4.477 15.522,0 10,0 L10,0 Z M16.145,12.239 C16.076,13.071 15.443,14.134 14.561,14.288 C11.729,14.508 8.373,14.479 5.441,14.288 C4.526,14.173 3.925,13.07 3.857,12.239 C3.715,10.491 3.715,9.496 3.857,7.749 C3.925,6.917 4.541,5.821 5.441,5.722 C8.34,5.477 11.714,5.53 14.561,5.722 C15.578,5.759 16.076,6.808 16.145,7.64 C16.283,9.388 16.283,10.491 16.145,12.239 L16.145,12.239 Z" id="Fill-82"></path>
+                    <polyline id="Fill-83" points="8.75 12.5 12.5 10 8.75 7.5 8.75 12.5"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
